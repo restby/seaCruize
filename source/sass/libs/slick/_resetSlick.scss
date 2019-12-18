@@ -1,0 +1,102 @@
+.slick-prev {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 90px;
+  height: 14px;
+  transform: translateY(100px);
+  z-index: 2;
+  cursor: pointer;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 90px;
+    height: 14px;
+    background-image: url("../../../img/left-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.slick-next {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  width: 90px;
+  height: 14px;
+  transform: translateY(100px);
+  z-index: 2;
+  cursor: pointer;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 90px;
+    height: 14px;
+    background-image: url("../../../img/right-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.reviews__list {
+  .slick-prev {
+    transform: translateY(230px);
+  }
+
+  .slick-next {
+    transform: translateY(230px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slick-prev {
+    left: 0;
+    transform: translateY(210px);
+  }
+
+  .slick-next {
+    left: 105px;
+    right: auto;
+    transform: translateY(210px);
+  }
+
+  .reviews__list {
+    .slick-prev {
+      left: 0;
+      transform: translateY(120px);
+    }
+
+    .slick-next {
+      left: 105px;
+      right: auto;
+      transform: translateY(120px);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slick-prev {
+    left: 0;
+    transform: translateY(170px);
+  }
+
+  .slick-next {
+    left: 105px;
+    right: auto;
+    transform: translateY(170px);
+  }
+
+  .reviews__list {
+    .slick-prev {
+      left: 200px;
+      transform: translateY(110px);
+    }
+
+    .slick-next {
+      left: 305px;
+      transform: translateY(110px);
+    }
+  }
+}
