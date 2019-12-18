@@ -1,39 +1,23 @@
 @font-face {
-  font-family: "CoreSansELight";
-  src: url("../../fonts/CoreSansE-35Light.woff2") format("woff2"),
-    url("../../fonts/CoreSansE-35Light.woff") format("woff");
+  font-family: "RobotoSlabRegular";
+  src: url("../../fonts/RobotoSlab-Regular.woff2") format("woff2"),
+    url("../../fonts/RobotoSlab-Regular.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "CoreSansERegular";
-  src: url("../../fonts/CoreSansE-45Regular.woff2") format("woff2"),
-    url("../../fonts/CoreSansE-45Regular.woff") format("woff");
+  font-family: "RalewayBold";
+  src: url("../../fonts/Raleway-Bold.woff2") format("woff2"),
+    url("../../fonts/Raleway-Bold.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "CoreSansEBold";
-  src: url("../../fonts/CoreSansE-65Bold.woff2") format("woff2"),
-    url("../../fonts/CoreSansE-65Bold.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CoreSansEBlack";
-  src: url("../../fonts/CoreSansE-95Black.woff2") format("woff2"),
-    url("../../fonts/CoreSansE-95Black.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Besom";
-  src: url("../../fonts/Besom.woff2") format("woff2"),
-    url("../../fonts/Besom.woff") format("woff");
+  font-family: "RalewayRegular";
+  src: url("../../fonts/Raleway-Regular.woff2") format("woff2"),
+    url("../../fonts/Raleway-Regular.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
