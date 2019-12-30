@@ -1,1 +1,38 @@
-//
+.main-footer {
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  b {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "RalewayBold";
+    line-height: 1;
+    font-weight: 700;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  & span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  &__copyright {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

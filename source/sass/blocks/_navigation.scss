@@ -1,0 +1,45 @@
+.navigation {
+  padding-top: 27px;
+
+  &__btn {
+    @include ma-pa-reset;
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 22px;
+    height: 16px;
+    background-color: transparent;
+    border: none;
+    background-image: url('../../img/header-menu-icon.mobile.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  ul {
+    @include list-reset;
+    width: 100%;
+    transform: translateX(-15px);
+    position: absolute;
+    z-index: 2;
+    margin-top: 20px;
+    background-color: $text-color;
+    padding-left: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: none;
+    /*!!!!!!!!!!!!!!!!!!!*/
+
+    li {
+      &:hover .navigation__link {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $white-color;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,21 @@
+.social ul {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  & li {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: $text-color;
+  border-radius: 50%;
+}
