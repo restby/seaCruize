@@ -3134,19 +3134,18 @@ html {
   padding: 0;
   list-style: none; }
   .social ul li {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-right: 10px; }
 
 .social__link {
-  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   background-color: #0d3351;
   width: 30px;
