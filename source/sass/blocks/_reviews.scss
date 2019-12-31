@@ -1,0 +1,50 @@
+.reviews {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $white-color;
+}
+
+.reviews__title {
+  @include ma-pa-reset;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "RalewayBold",
+    "Arial",
+    sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.reviews__item {
+  background-color: $white-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.reviews__item-author {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: "RalewayBold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.reviews__ite-date {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.reviews__item-text {
+  @include ma-pa-reset;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.reviews__item-img {
+  display: block;
+}

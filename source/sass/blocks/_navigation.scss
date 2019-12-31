@@ -16,6 +16,36 @@
     cursor: pointer;
   }
 
+  &__btn--close {
+    background-image: none;
+    width: 22px;
+    height: 16px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      z-index: 5;
+      top: 8px;
+      left: 1px;
+      transform: rotate(45deg);
+      width: 20px;
+      height: 2px;
+      background-color: $black-color;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      z-index: 5;
+      top: 8px;
+      left: 1px;
+      transform: rotate(-45deg);
+      width: 20px;
+      height: 2px;
+      background-color: $black-color;
+    }
+  }
+
   ul {
     @include list-reset;
     width: 100%;
@@ -43,3 +73,7 @@
     text-decoration: none;
   }
 }
+
+// .navigation--open-menu {
+
+// }
