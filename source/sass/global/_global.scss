@@ -30,3 +30,11 @@ img {
   text-decoration: none;
   text-align: center;
 }
+
+.section-title {
+  @include ma-pa-reset;
+  text-align: center;
+  font-family: "RalewayBold", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}

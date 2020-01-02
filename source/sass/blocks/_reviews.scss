@@ -5,14 +5,7 @@
 }
 
 .reviews__title {
-  @include ma-pa-reset;
   margin-bottom: 20px;
-  text-align: center;
-  font-family: "RalewayBold",
-    "Arial",
-    sans-serif;
-  font-size: 30px;
-  font-weight: 700;
 }
 
 .reviews__item {
