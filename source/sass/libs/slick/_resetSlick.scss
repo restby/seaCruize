@@ -1,6 +1,6 @@
 .slick-dots li button::before {
   color: $text-color;
-  font-size: 36px;
+  font-size: 40px;
   opacity: 0.8;
 }
 
@@ -9,14 +9,19 @@
   opacity: 1;
 }
 
+.slick-next,
+.slick-prev {
+  top: auto;
+}
+
 .slick-prev {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  transform: translateY(-50%) translateX(-50px);
+  transform: translateY(40px) translateX(10px);
   z-index: 2;
   cursor: pointer;
   background-color: rgba($text-color, 0.85);
@@ -48,12 +53,12 @@
 
 .slick-next {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   right: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  transform: translateY(-50%) translateX(50px);
+  transform: translateY(40px) translateX(-10px);
   z-index: 2;
   cursor: pointer;
   background-color: rgba($text-color, 0.85);

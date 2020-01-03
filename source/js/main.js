@@ -11,7 +11,6 @@
 //   $("span[aria-label=Next]").text("");
 // });
 
-
 // main scripts
 /* $(function () {
   var navigationMenu = $('.navigation__list');
@@ -39,10 +38,9 @@
 //   });
 // });
 
-/*slick*/
-$(function () {
-  // slick settings
-  $('.reviews__wrap').slick({
+$(function() {
+  /*slick settings*/
+  $(".reviews__wrap").slick({
     autoplay: false,
     autoplaySpeed: 2500,
     speed: 600,
@@ -50,11 +48,12 @@ $(function () {
     dots: false,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    lazyLoad: 'progressive',
+    lazyLoad: "progressive",
     slidesToShow: 4,
     slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 1169,
+    responsive: [
+      {
+        breakpoint: 1170,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -63,16 +62,16 @@ $(function () {
         }
       },
       {
-        breakpoint: 995,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           dots: true
         }
       },
       {
-        breakpoint: 749,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -83,9 +82,43 @@ $(function () {
     ]
   });
 
-  $('.navigation__btn').click(function (e) {
+  /*owlCarousel settings*/
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    lazyLoad: true,
+    // autoplay: true,
+    autoplaySpeed: 1500,
+    responsive: {
+      0: {
+        items: 1,
+        dots: true,
+        nav: false
+      },
+      768: {
+        items: 1,
+        dots: true,
+        nav: false
+      },
+      992: {
+        items: 2,
+        dots: true,
+        nav: true,
+        margin: 10
+      },
+      1170: {
+        items: 4,
+        nav: true,
+        dots: true,
+        margin: 20
+      }
+    }
+  });
+  $(".owl-prev span").text("");
+  $(".owl-next span").text("");
+
+  $(".navigation__btn").click(function(e) {
     e.preventDefault();
-    $('.navigation ul').slideToggle("slow");
+    $(".navigation ul").slideToggle("slow");
     $(this).toggleClass("navigation__btn--close");
   });
 
