@@ -94,10 +94,23 @@
   width: 10px;
   height: 10px;
   opacity: 0.8;
+  margin-left: 11px;
+  margin-right: 11px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span {
   background: $main-color;
   opacity: 1;
 }
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: $text-color;
+  opacity: 1;
+}
+
+.owl-theme .owl-dots .owl-dot.active:hover span {
+  background: $main-color;
+  opacity: 1;
+}
+
+// :not(.owl-dot.active)

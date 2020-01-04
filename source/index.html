@@ -303,7 +303,7 @@
       <div class="container">
         <h2 class="gallery__title section-title">Галерея фото</h2>
         <!-- /.gallery__title -->
-        <div class="gallery__wrap owl-carousel owl-theme">
+        <div class="gallery__wrap owl-carousel owl-theme" id="gallery-owl-carousel">
           <!-- <div class="gallery__item">
             <img class="gallery__img" src="./img/gallery-1.jpg" alt="фото 1">
             </a>
@@ -342,7 +342,7 @@
           <div class="col-12">
             <h2 class="reviews__title section-title">Отзывы</h2>
             <!-- /.reviews__title -->
-            <div class="reviews__wrap">
+            <div class="reviews__wrap" id="reviews-slick">
               <div class="reviews__item">
                 <div class="reviews__item-head">
                   <span class="reviews__item-author">Автор 1 Такой-то</span>
@@ -424,14 +424,19 @@
     </section>
     <!-- /.reviews -->
 
-    <section class="do-after">
+    <section class="before-after">
       <div class="container">
+        <h2 class="before-after__title section-title">Ваше настроение: До прогулок с нами
+          и после!
+        </h2>
+        <!-- /.before-after__title -->
         <div class="row">
           <div class="col-12">
-            <div class="do-after__wrap">
-
+            <div class="before-after__wrap" id="before-after-twentytwenty">
+              <img src="img/sadsmiley.png" alt="before" class="before-after__img before-after__img--before">
+              <img src="img/happysmiley.png" alt="after" class="before-after__img before-after__img--after">
             </div>
-            <!-- /.do-after__wrap -->
+            <!-- /.before-after__wrap -->
           </div>
           <!-- /.col-12 -->
         </div>
@@ -439,7 +444,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.do-after -->
+    <!-- /.before-after -->
 
   </main>
   <!-- /.content -->
@@ -554,8 +559,8 @@
   <!-- <script src="js/libs/picturefill.min.js"></script> -->
 
   <!-- twentytwenty -->
-  <!-- <script src="js/libs/jquery.event.move.js"></script> -->
-  <!-- <script src="js/libs/jquery.twentytwenty.js"></script> -->
+  <script src="js/libs/jquery.event.move.js"></script>
+  <script src="js/libs/jquery.twentytwenty.js"></script>
   <!-- <script src="js/libs/jquery.event.move.min.js"></script> -->
   <!-- <script src="js/libs/jquery.twentytwenty.min.js"></script> -->
 

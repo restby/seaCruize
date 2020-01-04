@@ -1,46 +1,6 @@
-// owlCarousel settings
-// $('.owl-carousel').owlCarousel({
-//   items: 1,
-//   nav: true,
-//   dots: true,
-//   loop: true,
-//   lazyLoad: true
-// });
-// $(function () {
-//   $("span[aria-label=Previous]").text("");
-//   $("span[aria-label=Next]").text("");
-// });
-
-// main scripts
-/* $(function () {
-  var navigationMenu = $('.navigation__list');
-  var navigationBtn = $('.main-header__btn');
-  var leftSidebarMenu = $('.left-sidebar__list');
-  var leftSidebarBtn = $('.left-sidebar__btn');
-  navigationBtn.click(function (e) {
-    e.preventDefault();
-    navigationMenu.toggleClass('navigation__list--open');
-  });
-  leftSidebarBtn.click(function (e) {
-    e.preventDefault();
-    leftSidebarMenu.toggleClass('left-sidebar__list--open');
-  });
-}); */
-
-// $(function () {
-//   $('.filter__title').click(function (e) {
-//     e.preventDefault();
-//     $('.filter__list').slideToggle('slow');
-//   });
-//   $('.filter__btn').click(function (e) {
-//     e.preventDefault();
-//     $('.filter__list').slideToggle('slow');
-//   });
-// });
-
-$(function() {
+$(function () {
   /*slick settings*/
-  $(".reviews__wrap").slick({
+  $("#reviews-slick").slick({
     autoplay: false,
     autoplaySpeed: 2500,
     speed: 600,
@@ -51,8 +11,7 @@ $(function() {
     lazyLoad: "progressive",
     slidesToShow: 4,
     slidesToScroll: 1,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1170,
         settings: {
           slidesToShow: 2,
@@ -83,7 +42,7 @@ $(function() {
   });
 
   /*owlCarousel settings*/
-  $(".owl-carousel").owlCarousel({
+  $("#gallery-owl-carousel").owlCarousel({
     loop: true,
     lazyLoad: true,
     // autoplay: true,
@@ -116,7 +75,14 @@ $(function() {
   $(".owl-prev span").text("");
   $(".owl-next span").text("");
 
-  $(".navigation__btn").click(function(e) {
+  /*twentytwenty*/
+  $('#before-after-twentytwenty').twentytwenty({
+    before_label: 'До',
+    after_label: 'После',
+    default_offset_pct: 0.6
+  });
+
+  $(".navigation__btn").click(function (e) {
     e.preventDefault();
     $(".navigation ul").slideToggle("slow");
     $(this).toggleClass("navigation__btn--close");
