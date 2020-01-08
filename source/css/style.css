@@ -7215,10 +7215,13 @@ html {
 
 .before-after {
   padding-top: 20px;
-  padding-bottom: 20px; }
-
-.before-after__title {
-  margin-bottom: 20px; }
+  padding-bottom: 25px; }
+  .before-after__title {
+    margin-bottom: 20px;
+    line-height: 1; }
+    .before-after__title span {
+      font-size: 16px;
+      line-height: 1.2; }
 
 .main-footer {
   padding-top: 25px;

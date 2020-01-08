@@ -1,0 +1,14 @@
+.before-after {
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  &__title {
+    margin-bottom: 20px;
+    line-height: 1;
+
+    span {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+}
