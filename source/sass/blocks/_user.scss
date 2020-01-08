@@ -1,0 +1,13 @@
+.user-bar {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-bar {
+    display: block;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+
+// }

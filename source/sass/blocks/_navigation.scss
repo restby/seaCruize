@@ -10,7 +10,7 @@
     height: 16px;
     background-color: transparent;
     border: none;
-    background-image: url('../../img/header-menu-icon.mobile.png');
+    background-image: url("../../img/header-menu-icon.mobile.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -23,7 +23,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       z-index: 5;
       top: 8px;
       left: 1px;
@@ -35,7 +35,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       z-index: 5;
       top: 8px;
       left: 1px;
@@ -74,6 +74,10 @@
   }
 }
 
-// .navigation--open-menu {
-
+// @media (min-width: $tablet-width) {
+//   .navigation {
+//     ul {
+//       width: 420px;
+//     }
+//   }
 // }

@@ -36,3 +36,13 @@
     line-height: 24px;
   }
 }
+
+.main-footer__nav {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__nav {
+    display: block;
+  }
+}
